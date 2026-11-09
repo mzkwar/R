@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>اشتراك Earthlink</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#0f9d58">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header-card">
+
+        <div class="avatar">🌐</div>
+
+        <h1 id="name">جاري التحميل...</h1>
+
+        <div class="status" id="status">
+            تحميل البيانات...
+        </div>
+
+    </div>
+
+    <div class="countdown-card">
+
+        <h2>الوقت المتبقي</h2>
+
+        <div class="countdown">
+
+            <div class="box">
+                <span id="days">0</span>
+                <small>يوم</small>
+            </div>
+
+            <div class="box">
+                <span id="hours">0</span>
+                <small>ساعة</small>
+            </div>
+
+            <div class="box">
+                <span id="minutes">0</span>
+                <small>دقيقة</small>
+            </div>
+
+            <div class="box">
+                <span id="seconds">0</span>
+                <small>ثانية</small>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="info-card">
+
+        <div class="item">
+            <span>نوع الاشتراك</span>
+            <b id="package"></b>
+        </div>
+
+        <div class="item">
+            <span>السعر</span>
+            <b id="price"></b>
+        </div>
+
+        <div class="item">
+            <span>اسم المستخدم</span>
+            <b id="username"></b>
+        </div>
+
+        <div class="item">
+            <span>عنوان IP</span>
+            <b id="ip"></b>
+        </div>
+
+        <div class="item">
+            <span>الوكيل</span>
+            <b id="agent"></b>
+        </div>
+
+        <div class="item">
+            <span>تاريخ الانتهاء</span>
+            <b id="expire"></b>
+        </div>
+
+    </div>
+
+    <button onclick="loadData()" class="refresh">
+        تحديث البيانات
+    </button>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
