@@ -1,4 +1,6 @@
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^1.2.2
+pubspec.yaml has no lower-bound SDK constraint.
+
+You should edit pubspec.yaml to contain an SDK constraint:
+
+environment:
+  sdk: '^3.5.0'
